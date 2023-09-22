@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-api-feed
-        image: otejada/udagram-api-feed
+        image: otejada/udagram-api-feed:v2
         imagePullPolicy: Always
         resources:
           requests:
