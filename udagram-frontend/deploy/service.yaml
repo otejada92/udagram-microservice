@@ -13,6 +13,6 @@ spec:
   selector:
     app: udagram-frontend
   sessionAffinity: None
-  type: ClusterIP
+  type: LoadBalancer
 status:
   loadBalancer: {}
