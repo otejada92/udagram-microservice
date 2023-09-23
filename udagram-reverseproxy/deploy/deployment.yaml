@@ -15,7 +15,7 @@ spec:
         app: reverseproxy
     spec:
       containers:
-        - image: otejada/reverseproxy:v2
+        - image: otejada/reverseproxy
           name: reverseproxy
           imagePullPolicy: Always
           resources:
