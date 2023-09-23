@@ -19,7 +19,7 @@ services:
       AWS_PROFILE: $AWS_PROFILE
       AWS_MEDIA_BUCKET: $AWS_MEDIA_BUCKET
       JWT_SECRET: $JWT_SECRET
-      URL: "http://localhost:8100"
+      URL: $URL
   backend-feed:
     image: otejada/udagram-api-feed:v2
     volumes:
@@ -33,7 +33,7 @@ services:
       AWS_PROFILE: $AWS_PROFILE
       AWS_MEDIA_BUCKET: $AWS_MEDIA_BUCKET
       JWT_SECRET: $JWT_SECRET
-      URL: "http://localhost:8100"
+      URL: $URL
   frontend:
     image: otejada/udagram-frontend:v2
     ports:
