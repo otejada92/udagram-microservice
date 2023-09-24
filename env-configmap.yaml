@@ -7,6 +7,6 @@ data:
   JWT_SECRET: "hello world"
   POSTGRESS_DATABASE: "main"
   POSTGRESS_HOST: "main.cihlrpscxdbw.us-east-1.rds.amazonaws.com"
-  URL: "http://a31d76c0e10014be49445c0455b2c59f-1802948192.us-east-1.elb.amazonaws.com:8100"
+  URL: "http://a9c420957bf88436c97e6cfaaed38ff0-503145714.us-east-1.elb.amazonaws.com:8100"
 metadata:
   name: env-config
