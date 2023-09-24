@@ -1,7 +1,7 @@
 version: "3"
 services:
   reverseproxy:
-      image: otejada/reverseproxy
+      image: otejada/reverseproxy:v3
       ports:
           - 8080:8080
       restart: always
@@ -9,7 +9,7 @@ services:
         - backend-user
         - backend-feed
   backend-user:
-    image: otejada/udagram-api-user
+    image: otejada/udagram-api-user:v3
     environment:
       POSTGRESS_USERNAME: $POSTGRESS_USERNAME
       POSTGRESS_PASSWORD: $POSTGRESS_PASSWORD
@@ -21,7 +21,7 @@ services:
       JWT_SECRET: $JWT_SECRET
       URL: 'http://localhost:8100'
   backend-feed:
-    image: otejada/udagram-api-feed
+    image: otejada/udagram-api-feed:v3
     volumes:
       - $HOME/.aws:/root/.aws
     environment:
@@ -35,6 +35,6 @@ services:
       JWT_SECRET: $JWT_SECRET
       URL: 'http://localhost:8100'
   frontend:
-    image: otejada/udagram-frontend
+    image: otejada/udagram-frontend:v3
     ports:
       - "8100:80"
